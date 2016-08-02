@@ -1,0 +1,199 @@
+\hypertarget{classenvironment}{\section{environment Class Reference}
+\label{classenvironment}\index{environment@{environment}}
+}
+
+
+{\ttfamily \#include $<$environment.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classenvironment_aaff2c2f57d25e0af6981a673e0b85045}{environment} ()
+\item 
+void \hyperlink{classenvironment_acbd5c1e053c91847f7605cd8b29e7a10}{update} (int)
+\item 
+\hypertarget{classenvironment_ab8fa5dc66ae9a7cfd921f0097f6ff317}{void {\bfseries init} ()}\label{classenvironment_ab8fa5dc66ae9a7cfd921f0097f6ff317}
+
+\item 
+void \hyperlink{classenvironment_abfe6af8bba0929f848e73a0fa279fd1c}{add\-Ball} (int, int)
+\item 
+int \hyperlink{classenvironment_a4106cb73fcead35475ae8c33ffe89942}{get\-W\-I\-N\-D\-O\-W\-\_\-\-H\-E\-I\-G\-H\-T} ()
+\item 
+int \hyperlink{classenvironment_acb1222ce73320ac1aec5721f5c2783b6}{get\-W\-I\-N\-D\-O\-W\-\_\-\-W\-I\-D\-T\-H} ()
+\item 
+\hypertarget{classenvironment_a1f9d00c3197390de97d385e5871d92b2}{int {\bfseries get\-N\-E\-T\-\_\-\-H\-E\-I\-G\-H\-T} ()}\label{classenvironment_a1f9d00c3197390de97d385e5871d92b2}
+
+\item 
+void \hyperlink{classenvironment_a5e9a836194ff2b790e84a884d4dd09bf}{set\-W\-I\-N\-D\-O\-W\-\_\-\-H\-E\-I\-G\-H\-T} (int)
+\item 
+void \hyperlink{classenvironment_a64a6ec127866efa6a1e49e1700fea83b}{set\-W\-I\-N\-D\-O\-W\-\_\-\-W\-I\-D\-T\-H} (int)
+\item 
+void \hyperlink{classenvironment_a07df3c9f4baeecc67f94bd3eacf8e151}{register\-With} (\hyperlink{classSlime}{Slime}, bool)
+\item 
+void \hyperlink{classenvironment_acd0761acd4b21d3a49be966046af11cf}{register\-With} (\hyperlink{classBall}{Ball})
+\item 
+\hypertarget{classenvironment_a63d3437ab81498e7b884208f3f457711}{void {\bfseries score} (int)}\label{classenvironment_a63d3437ab81498e7b884208f3f457711}
+
+\item 
+\hypertarget{classenvironment_ada0be30d21ce8f4d621199c68d17612f}{void {\bfseries reset} (int)}\label{classenvironment_ada0be30d21ce8f4d621199c68d17612f}
+
+\item 
+\hypertarget{classenvironment_a50dbb74afc6b6bd9042379599cb01618}{void {\bfseries set\-Multiplayer} (bool)}\label{classenvironment_a50dbb74afc6b6bd9042379599cb01618}
+
+\item 
+\hypertarget{classenvironment_af5743bf8d1dcf909e95432651b53e89f}{bool {\bfseries is\-Multiplayer} ()}\label{classenvironment_af5743bf8d1dcf909e95432651b53e89f}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classenvironment_a40a78733acaf8f88ad526561e00c03f7}{\hyperlink{classSlime}{Slime} {\bfseries player1}}\label{classenvironment_a40a78733acaf8f88ad526561e00c03f7}
+
+\item 
+\hypertarget{classenvironment_a3ff6ba2d2f9d7ec5466e4139f478a835}{\hyperlink{classSlime}{Slime} {\bfseries player2}}\label{classenvironment_a3ff6ba2d2f9d7ec5466e4139f478a835}
+
+\item 
+\hypertarget{classenvironment_ac7e61528875363067f0ce8d1de440fa1}{\hyperlink{classBall}{Ball} {\bfseries ball}}\label{classenvironment_ac7e61528875363067f0ce8d1de440fa1}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Worked on by Arun Parthiban Additional implementation by Alex Wang 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classenvironment_aaff2c2f57d25e0af6981a673e0b85045}{\index{environment@{environment}!environment@{environment}}
+\index{environment@{environment}!environment@{environment}}
+\subsubsection[{environment}]{\setlength{\rightskip}{0pt plus 5cm}environment\-::environment (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classenvironment_aaff2c2f57d25e0af6981a673e0b85045}
+default constructor initializes private variables \begin{DoxyAuthor}{Author}
+Arun Parthiban 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classenvironment_abfe6af8bba0929f848e73a0fa279fd1c}{\index{environment@{environment}!add\-Ball@{add\-Ball}}
+\index{add\-Ball@{add\-Ball}!environment@{environment}}
+\subsubsection[{add\-Ball}]{\setlength{\rightskip}{0pt plus 5cm}void environment\-::add\-Ball (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}}\label{classenvironment_abfe6af8bba0929f848e73a0fa279fd1c}
+Adds a \hyperlink{classBall}{Ball} to the environment, with given coordinates 
+\begin{DoxyParams}{Parameters}
+{\em x} & for x\-Position of \hyperlink{classBall}{Ball} \\
+\hline
+{\em y} & for y\-Position of \hyperlink{classBall}{Ball} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Matthew Bullis 
+\end{DoxyAuthor}
+\hypertarget{classenvironment_a4106cb73fcead35475ae8c33ffe89942}{\index{environment@{environment}!get\-W\-I\-N\-D\-O\-W\-\_\-\-H\-E\-I\-G\-H\-T@{get\-W\-I\-N\-D\-O\-W\-\_\-\-H\-E\-I\-G\-H\-T}}
+\index{get\-W\-I\-N\-D\-O\-W\-\_\-\-H\-E\-I\-G\-H\-T@{get\-W\-I\-N\-D\-O\-W\-\_\-\-H\-E\-I\-G\-H\-T}!environment@{environment}}
+\subsubsection[{get\-W\-I\-N\-D\-O\-W\-\_\-\-H\-E\-I\-G\-H\-T}]{\setlength{\rightskip}{0pt plus 5cm}int environment\-::get\-W\-I\-N\-D\-O\-W\-\_\-\-H\-E\-I\-G\-H\-T (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classenvironment_a4106cb73fcead35475ae8c33ffe89942}
+returns the height of the environment.\-No parameters. \begin{DoxyAuthor}{Author}
+Arun Parthiban 
+\end{DoxyAuthor}
+\hypertarget{classenvironment_acb1222ce73320ac1aec5721f5c2783b6}{\index{environment@{environment}!get\-W\-I\-N\-D\-O\-W\-\_\-\-W\-I\-D\-T\-H@{get\-W\-I\-N\-D\-O\-W\-\_\-\-W\-I\-D\-T\-H}}
+\index{get\-W\-I\-N\-D\-O\-W\-\_\-\-W\-I\-D\-T\-H@{get\-W\-I\-N\-D\-O\-W\-\_\-\-W\-I\-D\-T\-H}!environment@{environment}}
+\subsubsection[{get\-W\-I\-N\-D\-O\-W\-\_\-\-W\-I\-D\-T\-H}]{\setlength{\rightskip}{0pt plus 5cm}int environment\-::get\-W\-I\-N\-D\-O\-W\-\_\-\-W\-I\-D\-T\-H (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classenvironment_acb1222ce73320ac1aec5721f5c2783b6}
+returns the width of the environment.\-No parameters. \begin{DoxyAuthor}{Author}
+Arun Parthiban 
+\end{DoxyAuthor}
+\hypertarget{classenvironment_a07df3c9f4baeecc67f94bd3eacf8e151}{\index{environment@{environment}!register\-With@{register\-With}}
+\index{register\-With@{register\-With}!environment@{environment}}
+\subsubsection[{register\-With}]{\setlength{\rightskip}{0pt plus 5cm}void environment\-::register\-With (
+\begin{DoxyParamCaption}
+\item[{{\bf Slime}}]{shady, }
+\item[{bool}]{p}
+\end{DoxyParamCaption}
+)}}\label{classenvironment_a07df3c9f4baeecc67f94bd3eacf8e151}
+Registers a slime with the environment 
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{classSlime}{Slime}} & shady the \hyperlink{classSlime}{Slime} to register. \\
+\hline
+{\em bool} & p whether or not the shaddy is player1 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Matthew Bullis 
+\end{DoxyAuthor}
+\hypertarget{classenvironment_acd0761acd4b21d3a49be966046af11cf}{\index{environment@{environment}!register\-With@{register\-With}}
+\index{register\-With@{register\-With}!environment@{environment}}
+\subsubsection[{register\-With}]{\setlength{\rightskip}{0pt plus 5cm}void environment\-::register\-With (
+\begin{DoxyParamCaption}
+\item[{{\bf Ball}}]{b}
+\end{DoxyParamCaption}
+)}}\label{classenvironment_acd0761acd4b21d3a49be966046af11cf}
+Registers a \hyperlink{classBall}{Ball} with the environment 
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{classBall}{Ball}} & b the \hyperlink{classBall}{Ball} to register. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Matthew Bullis 
+\end{DoxyAuthor}
+\hypertarget{classenvironment_a5e9a836194ff2b790e84a884d4dd09bf}{\index{environment@{environment}!set\-W\-I\-N\-D\-O\-W\-\_\-\-H\-E\-I\-G\-H\-T@{set\-W\-I\-N\-D\-O\-W\-\_\-\-H\-E\-I\-G\-H\-T}}
+\index{set\-W\-I\-N\-D\-O\-W\-\_\-\-H\-E\-I\-G\-H\-T@{set\-W\-I\-N\-D\-O\-W\-\_\-\-H\-E\-I\-G\-H\-T}!environment@{environment}}
+\subsubsection[{set\-W\-I\-N\-D\-O\-W\-\_\-\-H\-E\-I\-G\-H\-T}]{\setlength{\rightskip}{0pt plus 5cm}void environment\-::set\-W\-I\-N\-D\-O\-W\-\_\-\-H\-E\-I\-G\-H\-T (
+\begin{DoxyParamCaption}
+\item[{int}]{height}
+\end{DoxyParamCaption}
+)}}\label{classenvironment_a5e9a836194ff2b790e84a884d4dd09bf}
+sets the height of the environment. 
+\begin{DoxyParams}{Parameters}
+{\em int} & height for height of the environment \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Arun Parthiban 
+\end{DoxyAuthor}
+\hypertarget{classenvironment_a64a6ec127866efa6a1e49e1700fea83b}{\index{environment@{environment}!set\-W\-I\-N\-D\-O\-W\-\_\-\-W\-I\-D\-T\-H@{set\-W\-I\-N\-D\-O\-W\-\_\-\-W\-I\-D\-T\-H}}
+\index{set\-W\-I\-N\-D\-O\-W\-\_\-\-W\-I\-D\-T\-H@{set\-W\-I\-N\-D\-O\-W\-\_\-\-W\-I\-D\-T\-H}!environment@{environment}}
+\subsubsection[{set\-W\-I\-N\-D\-O\-W\-\_\-\-W\-I\-D\-T\-H}]{\setlength{\rightskip}{0pt plus 5cm}void environment\-::set\-W\-I\-N\-D\-O\-W\-\_\-\-W\-I\-D\-T\-H (
+\begin{DoxyParamCaption}
+\item[{int}]{width}
+\end{DoxyParamCaption}
+)}}\label{classenvironment_a64a6ec127866efa6a1e49e1700fea83b}
+sets the width of the environment. 
+\begin{DoxyParams}{Parameters}
+{\em int} & width for width of the environment \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Arun Parthiban 
+\end{DoxyAuthor}
+\hypertarget{classenvironment_acbd5c1e053c91847f7605cd8b29e7a10}{\index{environment@{environment}!update@{update}}
+\index{update@{update}!environment@{environment}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void environment\-::update (
+\begin{DoxyParamCaption}
+\item[{int}]{time}
+\end{DoxyParamCaption}
+)}}\label{classenvironment_acbd5c1e053c91847f7605cd8b29e7a10}
+Updates the environment based on the elapsed time 
+\begin{DoxyParams}{Parameters}
+{\em int} & time for elapsed time. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Matthew Bullis 
+\end{DoxyAuthor}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+environment.\-h\item 
+environment.\-cpp\end{DoxyCompactItemize}

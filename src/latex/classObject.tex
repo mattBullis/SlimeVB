@@ -1,0 +1,343 @@
+\hypertarget{classObject}{\section{Object Class Reference}
+\label{classObject}\index{Object@{Object}}
+}
+Inheritance diagram for Object\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classObject}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classObject_a40860402e64d8008fb42329df7097cdb}{Object} ()
+\item 
+\hyperlink{classObject_a43ed9b32c482cf0db8bf2d3660feb5f0}{Object} (int, int, int)
+\item 
+\hyperlink{classObject_ad1af0861169e7b34efc6c86ff971872f}{Object} (int, int, int, char)
+\item 
+void \hyperlink{classObject_aec33bdfdbb4d45f6060f409a1662134d}{set\-Position} (int, int)
+\item 
+\hyperlink{structPosition}{Position} \hyperlink{classObject_a3d27536422e7792a3fa7b34ab9862ec4}{get\-Position} ()
+\item 
+\hypertarget{classObject_ac81f42238b7adaf527b79a5411ca9705}{\hyperlink{structPosition}{Position} {\bfseries get\-Abs\-Position} ()}\label{classObject_ac81f42238b7adaf527b79a5411ca9705}
+
+\item 
+\hypertarget{classObject_abbcebc4287c71f92a6f50392bdf9da77}{void {\bfseries set\-Orientation} (int)}\label{classObject_abbcebc4287c71f92a6f50392bdf9da77}
+
+\item 
+\hypertarget{classObject_a69d00971216903be3793b082458d0bd9}{int {\bfseries get\-Orientation\-G\-L\-U\-T} ()}\label{classObject_a69d00971216903be3793b082458d0bd9}
+
+\item 
+\hypertarget{classObject_a34ad252eded3300ffe5119e768a082a1}{int {\bfseries get\-Orientation} ()}\label{classObject_a34ad252eded3300ffe5119e768a082a1}
+
+\item 
+void \hyperlink{classObject_a2143ff47aab9b29336dba6194027edeb}{set\-Radius} (int)
+\item 
+int \hyperlink{classObject_a82840223125a721f50228530b9b4105f}{get\-Radius} ()
+\item 
+int \hyperlink{classObject_a60b3199915a0529e3cedd228ae68b913}{collision\-Border} (int, int)
+\item 
+void \hyperlink{classObject_aaf387599b25880d13058c62091ef739d}{set\-Velocity} (int, int)
+\item 
+\hypertarget{classObject_ac273a6182758926b972b1e9d73fbf562}{\hyperlink{structVelocity}{Velocity} {\bfseries get\-Velocity} ()}\label{classObject_ac273a6182758926b972b1e9d73fbf562}
+
+\item 
+void \hyperlink{classObject_a627ab558ee01d1cb6865ff4f60f5568b}{set\-Color} (char)
+\item 
+char \hyperlink{classObject_a7d16042d20401814b7d2922ca1023aa3}{get\-Color} ()
+\item 
+bool \hyperlink{classObject_ab75112940a2a3941b9856529f283e9a8}{collision\-Obstacle} (\hyperlink{classObject}{Object} r)
+\item 
+int \hyperlink{classObject_aed0e66208e6a5c4595f20e32041917de}{get\-Distance} (\hyperlink{structPosition}{Position})
+\item 
+\hypertarget{classObject_a5d95415c2e3fe9ab7fdc1a2d2f85c6d7}{void {\bfseries orient\-Towards} (\hyperlink{structPosition}{Position})}\label{classObject_a5d95415c2e3fe9ab7fdc1a2d2f85c6d7}
+
+\item 
+int \hyperlink{classObject_a3c70fb123af0439b5d1c916ca74237a8}{angle\-Of} (\hyperlink{structPosition}{Position})
+\item 
+void \hyperlink{classObject_ac1894a4a885cb94ccd25fb3291599153}{translate} (int)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structPosition}{Position} \hyperlink{classObject_ad5b0ba88b937905bd86696917b252b8b}{position}
+\item 
+\hypertarget{classObject_a9f84fc31e8a08359d432ff7beb146501}{\hyperlink{structVelocity}{Velocity} {\bfseries velocity}}\label{classObject_a9f84fc31e8a08359d432ff7beb146501}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classObject_aa8fc90771d9d3dce661deb5ee14662a8}{static const int {\bfseries S\-C\-A\-L\-A\-R} = 1000}\label{classObject_aa8fc90771d9d3dce661deb5ee14662a8}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classObject_a6937bdcbc9efbcc6ed7347243819ed77}{char {\bfseries color}}\label{classObject_a6937bdcbc9efbcc6ed7347243819ed77}
+
+\item 
+\hypertarget{classObject_abb2dc186dcec09160e6211e84120f0a5}{int {\bfseries radius}}\label{classObject_abb2dc186dcec09160e6211e84120f0a5}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classObject_a40860402e64d8008fb42329df7097cdb}{\index{Object@{Object}!Object@{Object}}
+\index{Object@{Object}!Object@{Object}}
+\subsubsection[{Object}]{\setlength{\rightskip}{0pt plus 5cm}Object\-::\-Object (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classObject_a40860402e64d8008fb42329df7097cdb}
+Default and other constructors
+
+Written on by Alex Wang get\-Distance written by Matt Bullis
+
+Null/default constructor \begin{DoxyAuthor}{Author}
+Alex Wang 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em x\-Position} & for x coordinate \\
+\hline
+{\em y\-Position} & for y coordinate \\
+\hline
+{\em radius} & for radius, in int \\
+\hline
+\end{DoxyParams}
+\hypertarget{classObject_a43ed9b32c482cf0db8bf2d3660feb5f0}{\index{Object@{Object}!Object@{Object}}
+\index{Object@{Object}!Object@{Object}}
+\subsubsection[{Object}]{\setlength{\rightskip}{0pt plus 5cm}Object\-::\-Object (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{int}]{r}
+\end{DoxyParamCaption}
+)}}\label{classObject_a43ed9b32c482cf0db8bf2d3660feb5f0}
+Constructor with three passed parameters \begin{DoxyAuthor}{Author}
+Alex Wang 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em int} & x for x coordinate \\
+\hline
+{\em int} & y for y coordinate \\
+\hline
+{\em int} & r for radius \\
+\hline
+\end{DoxyParams}
+\hypertarget{classObject_ad1af0861169e7b34efc6c86ff971872f}{\index{Object@{Object}!Object@{Object}}
+\index{Object@{Object}!Object@{Object}}
+\subsubsection[{Object}]{\setlength{\rightskip}{0pt plus 5cm}Object\-::\-Object (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{int}]{r, }
+\item[{char}]{c}
+\end{DoxyParamCaption}
+)}}\label{classObject_ad1af0861169e7b34efc6c86ff971872f}
+Constructor with three passed parameters \begin{DoxyAuthor}{Author}
+Alex Wang 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em int} & x for x coordinate \\
+\hline
+{\em int} & y for y coordinate \\
+\hline
+{\em int} & r for radius \\
+\hline
+{\em char} & c for color \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classObject_a3c70fb123af0439b5d1c916ca74237a8}{\index{Object@{Object}!angle\-Of@{angle\-Of}}
+\index{angle\-Of@{angle\-Of}!Object@{Object}}
+\subsubsection[{angle\-Of}]{\setlength{\rightskip}{0pt plus 5cm}int Object\-::angle\-Of (
+\begin{DoxyParamCaption}
+\item[{{\bf Position}}]{p}
+\end{DoxyParamCaption}
+)}}\label{classObject_a3c70fb123af0439b5d1c916ca74237a8}
+This function requires one parameters\-: p. 
+\begin{DoxyParams}{Parameters}
+{\em p} & the position the objectis located at \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Matt Bullis 
+\end{DoxyAuthor}
+\hypertarget{classObject_a60b3199915a0529e3cedd228ae68b913}{\index{Object@{Object}!collision\-Border@{collision\-Border}}
+\index{collision\-Border@{collision\-Border}!Object@{Object}}
+\subsubsection[{collision\-Border}]{\setlength{\rightskip}{0pt plus 5cm}int Object\-::collision\-Border (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}}\label{classObject_a60b3199915a0529e3cedd228ae68b913}
+Checks to see if the robot has collided with the border returns an array of four elements each representing a border if there is a collision with the right border, returns 1 if there is a collision with the upper border, returns 2 if there is a collision with the left border, returns 3 if there is a collision with the bottom border, returns 4 
+\begin{DoxyParams}{Parameters}
+{\em x} & and y are both coordinates of the new position \\
+\hline
+{\em $\ast$array} & is a array of robot objects containing the robot, obstacles, and the target \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Aaron Switzer 
+\end{DoxyAuthor}
+\hypertarget{classObject_ab75112940a2a3941b9856529f283e9a8}{\index{Object@{Object}!collision\-Obstacle@{collision\-Obstacle}}
+\index{collision\-Obstacle@{collision\-Obstacle}!Object@{Object}}
+\subsubsection[{collision\-Obstacle}]{\setlength{\rightskip}{0pt plus 5cm}bool Object\-::collision\-Obstacle (
+\begin{DoxyParamCaption}
+\item[{{\bf Object}}]{r}
+\end{DoxyParamCaption}
+)}}\label{classObject_ab75112940a2a3941b9856529f283e9a8}
+returns true if Is object is colliding with another object returns false otherwise 
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{classObject}{Object}} & r for object to test collision against \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Aaron Switzer. 
+\end{DoxyAuthor}
+\hypertarget{classObject_a7d16042d20401814b7d2922ca1023aa3}{\index{Object@{Object}!get\-Color@{get\-Color}}
+\index{get\-Color@{get\-Color}!Object@{Object}}
+\subsubsection[{get\-Color}]{\setlength{\rightskip}{0pt plus 5cm}char Object\-::get\-Color (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classObject_a7d16042d20401814b7d2922ca1023aa3}
+returns color for a given object \begin{DoxyAuthor}{Author}
+Alex Wang 
+\end{DoxyAuthor}
+\hypertarget{classObject_aed0e66208e6a5c4595f20e32041917de}{\index{Object@{Object}!get\-Distance@{get\-Distance}}
+\index{get\-Distance@{get\-Distance}!Object@{Object}}
+\subsubsection[{get\-Distance}]{\setlength{\rightskip}{0pt plus 5cm}int Object\-::get\-Distance (
+\begin{DoxyParamCaption}
+\item[{{\bf Position}}]{p}
+\end{DoxyParamCaption}
+)}}\label{classObject_aed0e66208e6a5c4595f20e32041917de}
+returns distance of object and a given position 
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{structPosition}{Position}} & p for calculating the distance \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Matt Bullis 
+\end{DoxyAuthor}
+\hypertarget{classObject_a3d27536422e7792a3fa7b34ab9862ec4}{\index{Object@{Object}!get\-Position@{get\-Position}}
+\index{get\-Position@{get\-Position}!Object@{Object}}
+\subsubsection[{get\-Position}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Position} Object\-::get\-Position (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classObject_a3d27536422e7792a3fa7b34ab9862ec4}
+returns position for a given object \begin{DoxyAuthor}{Author}
+Alex Wang 
+\end{DoxyAuthor}
+\hypertarget{classObject_a82840223125a721f50228530b9b4105f}{\index{Object@{Object}!get\-Radius@{get\-Radius}}
+\index{get\-Radius@{get\-Radius}!Object@{Object}}
+\subsubsection[{get\-Radius}]{\setlength{\rightskip}{0pt plus 5cm}int Object\-::get\-Radius (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classObject_a82840223125a721f50228530b9b4105f}
+returns radius for a given object \begin{DoxyAuthor}{Author}
+Alex Wang 
+\end{DoxyAuthor}
+\hypertarget{classObject_a627ab558ee01d1cb6865ff4f60f5568b}{\index{Object@{Object}!set\-Color@{set\-Color}}
+\index{set\-Color@{set\-Color}!Object@{Object}}
+\subsubsection[{set\-Color}]{\setlength{\rightskip}{0pt plus 5cm}void Object\-::set\-Color (
+\begin{DoxyParamCaption}
+\item[{char}]{c}
+\end{DoxyParamCaption}
+)}}\label{classObject_a627ab558ee01d1cb6865ff4f60f5568b}
+sets color for a given object \begin{DoxyAuthor}{Author}
+Alex Wang 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em char} & c to set color \\
+\hline
+\end{DoxyParams}
+\hypertarget{classObject_aec33bdfdbb4d45f6060f409a1662134d}{\index{Object@{Object}!set\-Position@{set\-Position}}
+\index{set\-Position@{set\-Position}!Object@{Object}}
+\subsubsection[{set\-Position}]{\setlength{\rightskip}{0pt plus 5cm}void Object\-::set\-Position (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}}\label{classObject_aec33bdfdbb4d45f6060f409a1662134d}
+Methods for functionality
+
+sets position for a given object for x and y parameters \begin{DoxyAuthor}{Author}
+Alex Wang 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em int} & x to set x coordinate \\
+\hline
+{\em int} & y to set y coordinate \\
+\hline
+\end{DoxyParams}
+\hypertarget{classObject_a2143ff47aab9b29336dba6194027edeb}{\index{Object@{Object}!set\-Radius@{set\-Radius}}
+\index{set\-Radius@{set\-Radius}!Object@{Object}}
+\subsubsection[{set\-Radius}]{\setlength{\rightskip}{0pt plus 5cm}void Object\-::set\-Radius (
+\begin{DoxyParamCaption}
+\item[{int}]{r}
+\end{DoxyParamCaption}
+)}}\label{classObject_a2143ff47aab9b29336dba6194027edeb}
+sets radius for a given object \begin{DoxyAuthor}{Author}
+Alex Wang 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em int} & r to set radius \\
+\hline
+\end{DoxyParams}
+\hypertarget{classObject_aaf387599b25880d13058c62091ef739d}{\index{Object@{Object}!set\-Velocity@{set\-Velocity}}
+\index{set\-Velocity@{set\-Velocity}!Object@{Object}}
+\subsubsection[{set\-Velocity}]{\setlength{\rightskip}{0pt plus 5cm}void Object\-::set\-Velocity (
+\begin{DoxyParamCaption}
+\item[{int}]{xv, }
+\item[{int}]{yv}
+\end{DoxyParamCaption}
+)}}\label{classObject_aaf387599b25880d13058c62091ef739d}
+sets the speed of an object 
+\begin{DoxyParams}{Parameters}
+{\em int} & speed that is the speed variable \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Alex Wang 
+\end{DoxyAuthor}
+\hypertarget{classObject_ac1894a4a885cb94ccd25fb3291599153}{\index{Object@{Object}!translate@{translate}}
+\index{translate@{translate}!Object@{Object}}
+\subsubsection[{translate}]{\setlength{\rightskip}{0pt plus 5cm}void Object\-::translate (
+\begin{DoxyParamCaption}
+\item[{int}]{pixels}
+\end{DoxyParamCaption}
+)}}\label{classObject_ac1894a4a885cb94ccd25fb3291599153}
+This function requires one parameters\-: pixels. 
+\begin{DoxyParams}{Parameters}
+{\em pixels} & the distance to be travelled in pixels \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Matt Bullis 
+\end{DoxyAuthor}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classObject_ad5b0ba88b937905bd86696917b252b8b}{\index{Object@{Object}!position@{position}}
+\index{position@{position}!Object@{Object}}
+\subsubsection[{position}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Position} Object\-::position}}\label{classObject_ad5b0ba88b937905bd86696917b252b8b}
+Variables for position and radius and color 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Object.\-h\item 
+Object.\-cpp\end{DoxyCompactItemize}

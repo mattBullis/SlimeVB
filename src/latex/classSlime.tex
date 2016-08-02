@@ -1,0 +1,172 @@
+\hypertarget{classSlime}{\section{Slime Class Reference}
+\label{classSlime}\index{Slime@{Slime}}
+}
+Inheritance diagram for Slime\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classSlime}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSlime_a311bc6c56df2c1f7660a08634e560db6}{Slime} ()
+\item 
+\hyperlink{classSlime_ae3f09154eb9ffeb1e3f40914f85e7fb8}{Slime} (int, int, char)
+\item 
+void \hyperlink{classSlime_a369c16e49e7cbc425c7486d9e914ecc5}{move} (int)
+\item 
+void \hyperlink{classSlime_a825cc65a1acef3382eb986567b9f9639}{set\-Input} (int)
+\item 
+void \hyperlink{classSlime_a8cb4328663278acf60995d2d47894f14}{move\-To} (\hyperlink{structPosition}{Position})
+\item 
+void \hyperlink{classSlime_a3f7637800c973e4e8fbdf899e911c59e}{play\-Defense} (\hyperlink{structPosition}{Position}, \hyperlink{structPosition}{Position}, \hyperlink{structVelocity}{Velocity})
+\item 
+void \hyperlink{classSlime_af50875e65a9a9a1ce4880ba4b4864436}{return\-Ball} (\hyperlink{structPosition}{Position}, \hyperlink{structPosition}{Position}, \hyperlink{structVelocity}{Velocity})
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classSlime_a33c70f396f273db5c1bd716a7f520bb2}{static const int {\bfseries move\-Error\-Acceptance} = 2}\label{classSlime_a33c70f396f273db5c1bd716a7f520bb2}
+
+\item 
+\hypertarget{classSlime_a5b95a92ca5e1c3f3b93522f66fbc2668}{static const int {\bfseries screen\-Size} = 800}\label{classSlime_a5b95a92ca5e1c3f3b93522f66fbc2668}
+
+\item 
+\hypertarget{classSlime_a90330dacbc5c177c82a054da6505cd2c}{static const int {\bfseries move\-Speed} = 300}\label{classSlime_a90330dacbc5c177c82a054da6505cd2c}
+
+\item 
+\hypertarget{classSlime_a35adc59a855a3e0e5857889a559e7aa9}{static const int {\bfseries jump\-Speed} = 600}\label{classSlime_a35adc59a855a3e0e5857889a559e7aa9}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classSlime_a311bc6c56df2c1f7660a08634e560db6}{\index{Slime@{Slime}!Slime@{Slime}}
+\index{Slime@{Slime}!Slime@{Slime}}
+\subsubsection[{Slime}]{\setlength{\rightskip}{0pt plus 5cm}Slime\-::\-Slime (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSlime_a311bc6c56df2c1f7660a08634e560db6}
+default constructor initializes all variables \begin{DoxyAuthor}{Author}
+Matthew Bullis 
+\end{DoxyAuthor}
+\hypertarget{classSlime_ae3f09154eb9ffeb1e3f40914f85e7fb8}{\index{Slime@{Slime}!Slime@{Slime}}
+\index{Slime@{Slime}!Slime@{Slime}}
+\subsubsection[{Slime}]{\setlength{\rightskip}{0pt plus 5cm}Slime\-::\-Slime (
+\begin{DoxyParamCaption}
+\item[{int}]{xpos, }
+\item[{int}]{ypos, }
+\item[{char}]{c}
+\end{DoxyParamCaption}
+)}}\label{classSlime_ae3f09154eb9ffeb1e3f40914f85e7fb8}
+Constructor with three passed parameters \begin{DoxyAuthor}{Author}
+Matthew Bullis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em int} & xpos for x coordinate \\
+\hline
+{\em int} & ypos for y coordinate \\
+\hline
+{\em char} & c for color \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classSlime_a369c16e49e7cbc425c7486d9e914ecc5}{\index{Slime@{Slime}!move@{move}}
+\index{move@{move}!Slime@{Slime}}
+\subsubsection[{move}]{\setlength{\rightskip}{0pt plus 5cm}void Slime\-::move (
+\begin{DoxyParamCaption}
+\item[{int}]{time}
+\end{DoxyParamCaption}
+)}}\label{classSlime_a369c16e49e7cbc425c7486d9e914ecc5}
+Updates the position based on the current input 
+\begin{DoxyParams}{Parameters}
+{\em int} & time for elapsed time. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Matthew Bullis 
+\end{DoxyAuthor}
+\hypertarget{classSlime_a8cb4328663278acf60995d2d47894f14}{\index{Slime@{Slime}!move\-To@{move\-To}}
+\index{move\-To@{move\-To}!Slime@{Slime}}
+\subsubsection[{move\-To}]{\setlength{\rightskip}{0pt plus 5cm}void Slime\-::move\-To (
+\begin{DoxyParamCaption}
+\item[{{\bf Position}}]{p}
+\end{DoxyParamCaption}
+)}}\label{classSlime_a8cb4328663278acf60995d2d47894f14}
+When single player move\-To is the A\-I responsible for moveing to position p 
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{structPosition}{Position}} & p is the destination. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Matthew Bullis 
+\end{DoxyAuthor}
+\hypertarget{classSlime_a3f7637800c973e4e8fbdf899e911c59e}{\index{Slime@{Slime}!play\-Defense@{play\-Defense}}
+\index{play\-Defense@{play\-Defense}!Slime@{Slime}}
+\subsubsection[{play\-Defense}]{\setlength{\rightskip}{0pt plus 5cm}void Slime\-::play\-Defense (
+\begin{DoxyParamCaption}
+\item[{{\bf Position}}]{p, }
+\item[{{\bf Position}}]{s, }
+\item[{{\bf Velocity}}]{V}
+\end{DoxyParamCaption}
+)}}\label{classSlime_a3f7637800c973e4e8fbdf899e911c59e}
+When single player play\-Defense is the A\-I responsible for deciding how to act when the ball is not in p2's court 
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{structPosition}{Position}} & p is where the ball with hit the ground. \\
+\hline
+{\em \hyperlink{structPosition}{Position}} & s is the enemy slime's current position \\
+\hline
+{\em \hyperlink{structVelocity}{Velocity}} & V is the velocity of the ball \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Matthew Bullis 
+\end{DoxyAuthor}
+\hypertarget{classSlime_af50875e65a9a9a1ce4880ba4b4864436}{\index{Slime@{Slime}!return\-Ball@{return\-Ball}}
+\index{return\-Ball@{return\-Ball}!Slime@{Slime}}
+\subsubsection[{return\-Ball}]{\setlength{\rightskip}{0pt plus 5cm}void Slime\-::return\-Ball (
+\begin{DoxyParamCaption}
+\item[{{\bf Position}}]{p, }
+\item[{{\bf Position}}]{s, }
+\item[{{\bf Velocity}}]{V}
+\end{DoxyParamCaption}
+)}}\label{classSlime_af50875e65a9a9a1ce4880ba4b4864436}
+When single player return\-Ball is the A\-I responsible for deciding how hard to hit the ball 
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{structPosition}{Position}} & p is where the ball with hit the ground. \\
+\hline
+{\em \hyperlink{structPosition}{Position}} & s is the enemy slime's current position \\
+\hline
+{\em \hyperlink{structVelocity}{Velocity}} & V is the velocity of the ball \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Matthew Bullis 
+\end{DoxyAuthor}
+\hypertarget{classSlime_a825cc65a1acef3382eb986567b9f9639}{\index{Slime@{Slime}!set\-Input@{set\-Input}}
+\index{set\-Input@{set\-Input}!Slime@{Slime}}
+\subsubsection[{set\-Input}]{\setlength{\rightskip}{0pt plus 5cm}void Slime\-::set\-Input (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}}\label{classSlime_a825cc65a1acef3382eb986567b9f9639}
+Updates the slimes travel direction based on the latest 
+\begin{DoxyParams}{Parameters}
+{\em int} & i for last input \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Matthew Bullis 
+\end{DoxyAuthor}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Slime.\-h\item 
+Slime.\-cpp\end{DoxyCompactItemize}

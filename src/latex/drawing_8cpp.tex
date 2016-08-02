@@ -1,0 +1,232 @@
+\hypertarget{drawing_8cpp}{\section{drawing.\-cpp File Reference}
+\label{drawing_8cpp}\index{drawing.\-cpp@{drawing.\-cpp}}
+}
+{\ttfamily \#include $<$math.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}Object.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}drawing.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$G\-L/glut.\-h$>$}\\*
+{\ttfamily \#include $<$G\-L/glu.\-h$>$}\\*
+{\ttfamily \#include $<$G\-L/glui.\-h$>$}\\*
+{\ttfamily \#include $<$cstdlib$>$}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include \char`\"{}environment.\-h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{drawing_8cpp_a598a3330b3c21701223ee0ca14316eca}{P\-I}~3.\-14f
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{drawing_8cpp_a1be686b4203466efcfc18ada8b9b2853}{void {\bfseries menu} (int id)}\label{drawing_8cpp_a1be686b4203466efcfc18ada8b9b2853}
+
+\item 
+\hypertarget{drawing_8cpp_a1bc781d5d2cb4613bb6157f8fc012d96}{void {\bfseries set\-Color} (char c)}\label{drawing_8cpp_a1bc781d5d2cb4613bb6157f8fc012d96}
+
+\item 
+void \hyperlink{drawing_8cpp_afcdf404cece45fdc9daffe1a0b48974c}{draw\-Net} (int xpos, int height)
+\item 
+\hypertarget{drawing_8cpp_a2b66f507378132a69eb038d1f27097bd}{void {\bfseries draw\-Slime} (\hyperlink{classSlime}{Slime} shaddy)}\label{drawing_8cpp_a2b66f507378132a69eb038d1f27097bd}
+
+\item 
+void \hyperlink{drawing_8cpp_a914ad5a726418ab9b69b0071718f7ce8}{draw\-Ball} (\hyperlink{classBall}{Ball} b)
+\item 
+void \hyperlink{drawing_8cpp_a4ea013001a5fb47853d0fab8f8de35cd}{display} (void)
+\item 
+void \hyperlink{drawing_8cpp_afd41946fdeaf7f653c07d140d70a11b7}{freeze\-Display} (void)
+\item 
+void \hyperlink{drawing_8cpp_a2313c6c5995e9023c607833af1bd4db5}{un\-Freeze} (void)
+\item 
+void \hyperlink{drawing_8cpp_adceba7dd8273e91208ca6e7f3d3db90f}{freeze} (void)
+\item 
+void \hyperlink{drawing_8cpp_a6819355374dd277347abd7c4235f0cd7}{reshape} (int width, int height)
+\item 
+void \hyperlink{drawing_8cpp_a01131b63acf241e9db91704d89ce15d2}{idle} (void)
+\item 
+void \hyperlink{drawing_8cpp_a8543b063f342565856b74f22bd583453}{set\-Single} (void)
+\item 
+void \hyperlink{drawing_8cpp_abef157af3d5bfae1eeb0fd1464b5298c}{set\-Multi} (void)
+\item 
+int \hyperlink{drawing_8cpp_aa3031dd280646724740dc9b0092906cc}{run\-Glut} ()
+\item 
+\hypertarget{drawing_8cpp_a921b29eb9802cb833818c43c4b17cb37}{void {\bfseries process\-Normal\-Keys} (unsigned char key, int x, int y)}\label{drawing_8cpp_a921b29eb9802cb833818c43c4b17cb37}
+
+\item 
+\hypertarget{drawing_8cpp_a78f6ec96acbb8156cd856466cf3848e5}{void {\bfseries key\-Up} (unsigned char key, int x, int y)}\label{drawing_8cpp_a78f6ec96acbb8156cd856466cf3848e5}
+
+\item 
+\hypertarget{drawing_8cpp_a64f0952205a2d490b6b5f14b806e3eb7}{void {\bfseries process\-Special\-Keys} (int key, int x, int y)}\label{drawing_8cpp_a64f0952205a2d490b6b5f14b806e3eb7}
+
+\item 
+\hypertarget{drawing_8cpp_a529355f27542469edae78a503c5103a9}{void {\bfseries key\-Special\-Up} (int key, int x, int y)}\label{drawing_8cpp_a529355f27542469edae78a503c5103a9}
+
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classenvironment}{environment} \hyperlink{drawing_8cpp_a47490e9bb403616123bb09400e317ac7}{env}
+\item 
+\hypertarget{drawing_8cpp_a65ba7a0b8164c01b33d92b9ab0f2af03}{int {\bfseries window}}\label{drawing_8cpp_a65ba7a0b8164c01b33d92b9ab0f2af03}
+
+\item 
+\hypertarget{drawing_8cpp_aaa2bba9b04515c5bbf5c04d20f672b12}{int {\bfseries previous\-Time}}\label{drawing_8cpp_aaa2bba9b04515c5bbf5c04d20f672b12}
+
+\item 
+\hypertarget{drawing_8cpp_a73ab6b9ae8c97849c3323ef4fe822ad3}{int {\bfseries current\-Time}}\label{drawing_8cpp_a73ab6b9ae8c97849c3323ef4fe822ad3}
+
+\item 
+\hypertarget{drawing_8cpp_aeda1fc5c02ff3c855b3b145567058cb9}{int {\bfseries elapsed\-Time}}\label{drawing_8cpp_aeda1fc5c02ff3c855b3b145567058cb9}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{drawing_8cpp_a598a3330b3c21701223ee0ca14316eca}{\index{drawing.\-cpp@{drawing.\-cpp}!P\-I@{P\-I}}
+\index{P\-I@{P\-I}!drawing.cpp@{drawing.\-cpp}}
+\subsubsection[{P\-I}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\-I~3.\-14f}}\label{drawing_8cpp_a598a3330b3c21701223ee0ca14316eca}
+Majority of work done by Arun Parthiban Glui methods and menu written by Alex Wang Various edits and fixes done by Aaron Switzer 
+
+\subsection{Function Documentation}
+\hypertarget{drawing_8cpp_a4ea013001a5fb47853d0fab8f8de35cd}{\index{drawing.\-cpp@{drawing.\-cpp}!display@{display}}
+\index{display@{display}!drawing.cpp@{drawing.\-cpp}}
+\subsubsection[{display}]{\setlength{\rightskip}{0pt plus 5cm}void display (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{drawing_8cpp_a4ea013001a5fb47853d0fab8f8de35cd}
+This function is called to update the display How it works is the elapsed time is calculated each loop and passed into our \hyperlink{classenvironment_acbd5c1e053c91847f7605cd8b29e7a10}{environment.\-update} method \begin{DoxyAuthor}{Author}
+Arun Parthiban 
+
+Aaron Switzer 
+
+Alex Wang 
+\end{DoxyAuthor}
+\hypertarget{drawing_8cpp_a914ad5a726418ab9b69b0071718f7ce8}{\index{drawing.\-cpp@{drawing.\-cpp}!draw\-Ball@{draw\-Ball}}
+\index{draw\-Ball@{draw\-Ball}!drawing.cpp@{drawing.\-cpp}}
+\subsubsection[{draw\-Ball}]{\setlength{\rightskip}{0pt plus 5cm}void draw\-Ball (
+\begin{DoxyParamCaption}
+\item[{{\bf Ball}}]{b}
+\end{DoxyParamCaption}
+)}}\label{drawing_8cpp_a914ad5a726418ab9b69b0071718f7ce8}
+This function draws a light on the display 
+\begin{DoxyParams}{Parameters}
+{\em a} & is a light \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Alex Wang 
+\end{DoxyAuthor}
+\hypertarget{drawing_8cpp_afcdf404cece45fdc9daffe1a0b48974c}{\index{drawing.\-cpp@{drawing.\-cpp}!draw\-Net@{draw\-Net}}
+\index{draw\-Net@{draw\-Net}!drawing.cpp@{drawing.\-cpp}}
+\subsubsection[{draw\-Net}]{\setlength{\rightskip}{0pt plus 5cm}void draw\-Net (
+\begin{DoxyParamCaption}
+\item[{int}]{xpos, }
+\item[{int}]{height}
+\end{DoxyParamCaption}
+)}}\label{drawing_8cpp_afcdf404cece45fdc9daffe1a0b48974c}
+This function draws a robot on the display 
+\begin{DoxyParams}{Parameters}
+{\em robot} & is a Robot \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Arun Parthiban 
+\end{DoxyAuthor}
+\hypertarget{drawing_8cpp_adceba7dd8273e91208ca6e7f3d3db90f}{\index{drawing.\-cpp@{drawing.\-cpp}!freeze@{freeze}}
+\index{freeze@{freeze}!drawing.cpp@{drawing.\-cpp}}
+\subsubsection[{freeze}]{\setlength{\rightskip}{0pt plus 5cm}void freeze (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{drawing_8cpp_adceba7dd8273e91208ca6e7f3d3db90f}
+This function freezes the display It works by passing the freeze\-Display function into glut\-Display\-Func all time varaibles are also updated every call, as robots will jump without \begin{DoxyAuthor}{Author}
+Alex Wang 
+\end{DoxyAuthor}
+\hypertarget{drawing_8cpp_afd41946fdeaf7f653c07d140d70a11b7}{\index{drawing.\-cpp@{drawing.\-cpp}!freeze\-Display@{freeze\-Display}}
+\index{freeze\-Display@{freeze\-Display}!drawing.cpp@{drawing.\-cpp}}
+\subsubsection[{freeze\-Display}]{\setlength{\rightskip}{0pt plus 5cm}void freeze\-Display (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{drawing_8cpp_afd41946fdeaf7f653c07d140d70a11b7}
+This function is called to freeze the dispay, so no objects are moving how it works is 0 is passed in to our environment update function \begin{DoxyAuthor}{Author}
+Alex Wang 
+\end{DoxyAuthor}
+\hypertarget{drawing_8cpp_a01131b63acf241e9db91704d89ce15d2}{\index{drawing.\-cpp@{drawing.\-cpp}!idle@{idle}}
+\index{idle@{idle}!drawing.cpp@{drawing.\-cpp}}
+\subsubsection[{idle}]{\setlength{\rightskip}{0pt plus 5cm}void idle (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{drawing_8cpp_a01131b63acf241e9db91704d89ce15d2}
+Idle fuction called by glut No parameters taken \begin{DoxyAuthor}{Author}
+Alex Wang 
+\end{DoxyAuthor}
+\hypertarget{drawing_8cpp_a6819355374dd277347abd7c4235f0cd7}{\index{drawing.\-cpp@{drawing.\-cpp}!reshape@{reshape}}
+\index{reshape@{reshape}!drawing.cpp@{drawing.\-cpp}}
+\subsubsection[{reshape}]{\setlength{\rightskip}{0pt plus 5cm}void reshape (
+\begin{DoxyParamCaption}
+\item[{int}]{width, }
+\item[{int}]{height}
+\end{DoxyParamCaption}
+)}}\label{drawing_8cpp_a6819355374dd277347abd7c4235f0cd7}
+Reshapes the glut displayed window 
+\begin{DoxyParams}{Parameters}
+{\em width} & represents window width \\
+\hline
+{\em height} & represents window height \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Arun Parthiban 
+\end{DoxyAuthor}
+\hypertarget{drawing_8cpp_aa3031dd280646724740dc9b0092906cc}{\index{drawing.\-cpp@{drawing.\-cpp}!run\-Glut@{run\-Glut}}
+\index{run\-Glut@{run\-Glut}!drawing.cpp@{drawing.\-cpp}}
+\subsubsection[{run\-Glut}]{\setlength{\rightskip}{0pt plus 5cm}int run\-Glut (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{drawing_8cpp_aa3031dd280646724740dc9b0092906cc}
+Drawing class written by Arun, with implementation from Alex and Aaron \hypertarget{drawing_8cpp_abef157af3d5bfae1eeb0fd1464b5298c}{\index{drawing.\-cpp@{drawing.\-cpp}!set\-Multi@{set\-Multi}}
+\index{set\-Multi@{set\-Multi}!drawing.cpp@{drawing.\-cpp}}
+\subsubsection[{set\-Multi}]{\setlength{\rightskip}{0pt plus 5cm}void set\-Multi (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{drawing_8cpp_abef157af3d5bfae1eeb0fd1464b5298c}
+This function sets the game to multiplayer It works by changing the environment's multiplayer variable to true \begin{DoxyAuthor}{Author}
+Matthew Bullis 
+\end{DoxyAuthor}
+\hypertarget{drawing_8cpp_a8543b063f342565856b74f22bd583453}{\index{drawing.\-cpp@{drawing.\-cpp}!set\-Single@{set\-Single}}
+\index{set\-Single@{set\-Single}!drawing.cpp@{drawing.\-cpp}}
+\subsubsection[{set\-Single}]{\setlength{\rightskip}{0pt plus 5cm}void set\-Single (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{drawing_8cpp_a8543b063f342565856b74f22bd583453}
+Call this function to create the glut display a submenu is also created using G\-L\-U\-I funcitonality includes four buttons\-: quit, pause, resume, and start When a button is clicked, the function that is mapped to it is called \begin{DoxyAuthor}{Author}
+Alex Wang 
+
+Arun Parthiban
+\end{DoxyAuthor}
+This function sets the game to single player It works by changing the environment's multiplayer variable to false \begin{DoxyAuthor}{Author}
+Matthew Bullis 
+\end{DoxyAuthor}
+\hypertarget{drawing_8cpp_a2313c6c5995e9023c607833af1bd4db5}{\index{drawing.\-cpp@{drawing.\-cpp}!un\-Freeze@{un\-Freeze}}
+\index{un\-Freeze@{un\-Freeze}!drawing.cpp@{drawing.\-cpp}}
+\subsubsection[{un\-Freeze}]{\setlength{\rightskip}{0pt plus 5cm}void un\-Freeze (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{drawing_8cpp_a2313c6c5995e9023c607833af1bd4db5}
+This function unfreezes the display It works by passing the display function into glut\-Display\-Func all time varaibles are also updated every call, as robots will jump without \begin{DoxyAuthor}{Author}
+Alex Wang 
+\end{DoxyAuthor}
+
+
+\subsection{Variable Documentation}
+\hypertarget{drawing_8cpp_a47490e9bb403616123bb09400e317ac7}{\index{drawing.\-cpp@{drawing.\-cpp}!env@{env}}
+\index{env@{env}!drawing.cpp@{drawing.\-cpp}}
+\subsubsection[{env}]{\setlength{\rightskip}{0pt plus 5cm}{\bf environment} env}}\label{drawing_8cpp_a47490e9bb403616123bb09400e317ac7}
+\hyperlink{classRenderEnv}{Render\-Env} written by Alex Wang and Arun Parthiban 

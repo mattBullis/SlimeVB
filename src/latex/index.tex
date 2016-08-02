@@ -1,0 +1,19 @@
+\hypertarget{index_intro_sec}{}\section{Introduction}\label{index_intro_sec}
+For my individual project, Professor Larson granted me permission to create a game called \hyperlink{classSlime}{Slime} Volleyball. \hyperlink{classSlime}{Slime} Volleyball adheres to some of the same rules as both pong and regular volleyball. Rules\-:
+\begin{DoxyEnumerate}
+\item A player gains a point when the ball lands on the opponents side of the net.
+\item A player may hit the ball as many times as they would like.
+\item A player may not leave their side of the court.
+\item If the ball hits a wall or the side of the net it will bounce, therefore the ball cannot go out of bounds.
+\item If the ball hits a player it will bounce and change direction depending on the balls velocity and the angle of the impact.
+\item If the ball hits the bottom of a player it will be \char`\"{}spiked\char`\"{} and go in the the opposite direction.
+\end{DoxyEnumerate}
+
+The main classes in this program are\-: Environment -\/ The environment tracks what is going on inside the game and where all objects are. It is responsible for telling the slimes and the ball when to move as well as informing them if a collision occurred and how they are expected to react. \hyperlink{classSlime}{Slime} -\/ Slimes are the players in \hyperlink{classSlime}{Slime} Volleyball. They are human or ai controlled and move around the environment base on inputs which each reflect a direction. The valid inputs can cause a slime to move left, move right, jump or stop moving. As a human player, slimes can be controlled with the a,w,d keys if player1 or the arrow keys if player 2. \hyperlink{classBall}{Ball} -\/ The ball is a self updating object in \hyperlink{classSlime}{Slime} Volleyball that updates its position only based on the change in time given by the environment. However, the velocity can be changed by the environment if there is a collision with another object. \hyperlink{classObject}{Object} -\/ The overall class for in game items, both \hyperlink{classSlime}{Slime} and \hyperlink{classBall}{Ball} inherit from \hyperlink{classObject}{Object} so it has many basic functions.
+
+Supporting Files\-: \hyperlink{classRenderEnv}{Render\-Env} -\/ A basic class which puts the Slimes and \hyperlink{classBall}{Ball} into the environment. Drawing -\/ Drawing is responsible for displaying all in game objects such as the Slimes,\hyperlink{classBall}{Ball} and net.
+
+Author\-: Matthew Bullis
+
+This project would not have been possible if my group for the previous iterations had not helped to build a solid base for this project.\-Alex Wang, Arun Parthiban, Aaron Switzer wrote many of the functions used in \hyperlink{classSlime}{Slime} Volleyball.\hypertarget{index_install_sec}{}\section{Installation}\label{index_install_sec}
+To use this software, just run the given make file by typing \char`\"{}make\char`\"{}(without quotation marks) on the U\-N\-I\-X terminal while in the src directory. 

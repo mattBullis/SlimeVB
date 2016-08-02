@@ -1,0 +1,139 @@
+\hypertarget{classRobot}{\section{Robot Class Reference}
+\label{classRobot}\index{Robot@{Robot}}
+}
+Inheritance diagram for Robot\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classRobot}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRobot_a4fc7c70ae20623f05e06f2ecb388b6c4}{Robot} ()
+\item 
+\hyperlink{classRobot_ae5751bb09af47b300059ad88cf830650}{Robot} (int, int, int, int, bool, bool)
+\item 
+void \hyperlink{classRobot_a393633b2e58bc48b09ca2f2e9cf84108}{move} (int, std\-::vector$<$ \hyperlink{classLight}{Light} $>$, std\-::vector$<$ \hyperlink{classRobot}{Robot} $>$)
+\item 
+bool \hyperlink{classRobot_abaf127f5ec8d6e467ccd5f27cc414d82}{get\-Visibility} ()
+\item 
+void \hyperlink{classRobot_a541eaf13131cccaf00c41809a3495cc8}{set\-Visibility} (bool)
+\item 
+void \hyperlink{classRobot_a5bc90f1b4c8a73a39595cda1439ba992}{calibrate\-Sensors} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classRobot_a4fc7c70ae20623f05e06f2ecb388b6c4}{\index{Robot@{Robot}!Robot@{Robot}}
+\index{Robot@{Robot}!Robot@{Robot}}
+\subsubsection[{Robot}]{\setlength{\rightskip}{0pt plus 5cm}Robot\-::\-Robot (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRobot_a4fc7c70ae20623f05e06f2ecb388b6c4}
+This constructor requires no parameters. \begin{DoxyAuthor}{Author}
+Alex Wang 
+\end{DoxyAuthor}
+\hypertarget{classRobot_ae5751bb09af47b300059ad88cf830650}{\index{Robot@{Robot}!Robot@{Robot}}
+\index{Robot@{Robot}!Robot@{Robot}}
+\subsubsection[{Robot}]{\setlength{\rightskip}{0pt plus 5cm}Robot\-::\-Robot (
+\begin{DoxyParamCaption}
+\item[{int}]{speed, }
+\item[{int}]{orient, }
+\item[{int}]{x\-Position, }
+\item[{int}]{y\-Position, }
+\item[{bool}]{is\-Direct, }
+\item[{bool}]{is\-Excite}
+\end{DoxyParamCaption}
+)}}\label{classRobot_ae5751bb09af47b300059ad88cf830650}
+This constructor requires six parameters\-: speed, orientation, x\-Position, y\-Position, is\-Direct, and is\-Excite 
+\begin{DoxyParams}{Parameters}
+{\em speed} & is the speed of the robots \\
+\hline
+{\em orient} & is the initial orientation of the robot \\
+\hline
+{\em x\-Position} & is the center of the robot on the x-\/axis \\
+\hline
+{\em y\-Position} & is the center of the robot on the y-\/axis \\
+\hline
+{\em is\-Direct} & determines whether it's a direct or crossed connection \\
+\hline
+{\em is\-Excite} & determines whether wheel speed increases or decreases due to light \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Alex Wang 
+
+Aaron Switzer 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classRobot_a5bc90f1b4c8a73a39595cda1439ba992}{\index{Robot@{Robot}!calibrate\-Sensors@{calibrate\-Sensors}}
+\index{calibrate\-Sensors@{calibrate\-Sensors}!Robot@{Robot}}
+\subsubsection[{calibrate\-Sensors}]{\setlength{\rightskip}{0pt plus 5cm}void Robot\-::calibrate\-Sensors (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRobot_a5bc90f1b4c8a73a39595cda1439ba992}
+This function calibrates the sensors on the robot \begin{DoxyAuthor}{Author}
+Matt Bullis 
+\end{DoxyAuthor}
+\hypertarget{classRobot_abaf127f5ec8d6e467ccd5f27cc414d82}{\index{Robot@{Robot}!get\-Visibility@{get\-Visibility}}
+\index{get\-Visibility@{get\-Visibility}!Robot@{Robot}}
+\subsubsection[{get\-Visibility}]{\setlength{\rightskip}{0pt plus 5cm}bool Robot\-::get\-Visibility (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRobot_abaf127f5ec8d6e467ccd5f27cc414d82}
+This functions take no parameters. Returns visibility; \begin{DoxyAuthor}{Author}
+Arun Parthiban 
+\end{DoxyAuthor}
+\hypertarget{classRobot_a393633b2e58bc48b09ca2f2e9cf84108}{\index{Robot@{Robot}!move@{move}}
+\index{move@{move}!Robot@{Robot}}
+\subsubsection[{move}]{\setlength{\rightskip}{0pt plus 5cm}void Robot\-::move (
+\begin{DoxyParamCaption}
+\item[{int}]{, }
+\item[{std\-::vector$<$ {\bf Light} $>$}]{, }
+\item[{std\-::vector$<$ {\bf Robot} $>$}]{}
+\end{DoxyParamCaption}
+)}}\label{classRobot_a393633b2e58bc48b09ca2f2e9cf84108}
+The move function takes in vectors for both the lights and robots in the simulation, and the elapsed time in order to determine how far and in what direction the robot should move. It first gathers data from the light sensors and the robot sensors in order to determine what speed the left and right wheels should be. After this it checks to position to see if it has gone off screen, and if so it will wrap the robot around to the other side. The last portion gets the distance the robot should travel, rotates the robot, and then translates, completing the move call. 
+\begin{DoxyParams}{Parameters}
+{\em int} & elapsed\-Time passed in to calculate translate distance \\
+\hline
+{\em vector$<$\-Light$>$} & lights passed in to calculate speed in the sensors \\
+\hline
+{\em vector$<$\-Robot$>$} & robots passed in to factor in robots into the speed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Matt Bullis 
+
+Arun Parthiban 
+
+Aaron Switzer 
+\end{DoxyAuthor}
+\hypertarget{classRobot_a541eaf13131cccaf00c41809a3495cc8}{\index{Robot@{Robot}!set\-Visibility@{set\-Visibility}}
+\index{set\-Visibility@{set\-Visibility}!Robot@{Robot}}
+\subsubsection[{set\-Visibility}]{\setlength{\rightskip}{0pt plus 5cm}void Robot\-::set\-Visibility (
+\begin{DoxyParamCaption}
+\item[{bool}]{v}
+\end{DoxyParamCaption}
+)}}\label{classRobot_a541eaf13131cccaf00c41809a3495cc8}
+The functions sets the visibility of the robot.. 
+\begin{DoxyParams}{Parameters}
+{\em bool} & v for visibility \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Arun Parthiban 
+\end{DoxyAuthor}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Robot.\-h\item 
+Robot.\-cpp\end{DoxyCompactItemize}

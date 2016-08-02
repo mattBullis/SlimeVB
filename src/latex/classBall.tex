@@ -1,0 +1,142 @@
+\hypertarget{classBall}{\section{Ball Class Reference}
+\label{classBall}\index{Ball@{Ball}}
+}
+Inheritance diagram for Ball\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classBall}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classBall_a86a144d3dad6c953e422e32435923bbb}{Ball} ()
+\item 
+\hyperlink{classBall_a29d1cfd97f0bfddcbf86f5d71ed4a74a}{Ball} (int, int)
+\item 
+void \hyperlink{classBall_ae58dee698dec173afc66000b4660e949}{move} (int)
+\item 
+void \hyperlink{classBall_ac8bde2e98049adf194667e6a6505112d}{wallbounce} ()
+\item 
+void \hyperlink{classBall_a82ffc97c926776abe6f508eaa997214d}{bounce} (double, double)
+\item 
+\hyperlink{structPosition}{Position} \hyperlink{classBall_a77d822e70c4f55c2d0d514b76cb1330b}{get\-Landing\-Zone} ()
+\item 
+void \hyperlink{classBall_aa9efc8640cf5de6377caa0d64cc8fb13}{recalc\-Landing\-Zone} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classBall_af17d8911edff6e79ebf5c353d8643e00}{static const float {\bfseries gravity} = 0.\-9}\label{classBall_af17d8911edff6e79ebf5c353d8643e00}
+
+\item 
+\hypertarget{classBall_a24bf806a98565f572173378c74043f41}{static const int {\bfseries ball\-Speed} = 650}\label{classBall_a24bf806a98565f572173378c74043f41}
+
+\item 
+\hypertarget{classBall_a82712fef17d72513e4dd92dff79c9765}{static const int {\bfseries S\-C\-A\-L\-A\-R} = 1000}\label{classBall_a82712fef17d72513e4dd92dff79c9765}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classBall_a86a144d3dad6c953e422e32435923bbb}{\index{Ball@{Ball}!Ball@{Ball}}
+\index{Ball@{Ball}!Ball@{Ball}}
+\subsubsection[{Ball}]{\setlength{\rightskip}{0pt plus 5cm}Ball\-::\-Ball (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classBall_a86a144d3dad6c953e422e32435923bbb}
+default constructor initializes all variables \begin{DoxyAuthor}{Author}
+Matthew Bullis 
+\end{DoxyAuthor}
+\hypertarget{classBall_a29d1cfd97f0bfddcbf86f5d71ed4a74a}{\index{Ball@{Ball}!Ball@{Ball}}
+\index{Ball@{Ball}!Ball@{Ball}}
+\subsubsection[{Ball}]{\setlength{\rightskip}{0pt plus 5cm}Ball\-::\-Ball (
+\begin{DoxyParamCaption}
+\item[{int}]{xpos, }
+\item[{int}]{ypos}
+\end{DoxyParamCaption}
+)}}\label{classBall_a29d1cfd97f0bfddcbf86f5d71ed4a74a}
+Constructor with two passed parameters \begin{DoxyAuthor}{Author}
+Matthew Bullis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em int} & xpos for x coordinate \\
+\hline
+{\em int} & ypos for y coordinate \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classBall_a82ffc97c926776abe6f508eaa997214d}{\index{Ball@{Ball}!bounce@{bounce}}
+\index{bounce@{bounce}!Ball@{Ball}}
+\subsubsection[{bounce}]{\setlength{\rightskip}{0pt plus 5cm}void Ball\-::bounce (
+\begin{DoxyParamCaption}
+\item[{double}]{nx, }
+\item[{double}]{ny}
+\end{DoxyParamCaption}
+)}}\label{classBall_a82ffc97c926776abe6f508eaa997214d}
+Updates the ball's velocity if there is a collision another object 
+\begin{DoxyParams}{Parameters}
+{\em double} & nx the x coordinate of the neutral vector between the ball and object \\
+\hline
+{\em double} & ny the y coordinate of the neutral vector between the ball and object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Matthew Bullis 
+\end{DoxyAuthor}
+\hypertarget{classBall_a77d822e70c4f55c2d0d514b76cb1330b}{\index{Ball@{Ball}!get\-Landing\-Zone@{get\-Landing\-Zone}}
+\index{get\-Landing\-Zone@{get\-Landing\-Zone}!Ball@{Ball}}
+\subsubsection[{get\-Landing\-Zone}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Position} Ball\-::get\-Landing\-Zone (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classBall_a77d822e70c4f55c2d0d514b76cb1330b}
+Returns the position the ball will land at \begin{DoxyAuthor}{Author}
+Matthew Bullis 
+\end{DoxyAuthor}
+\hypertarget{classBall_ae58dee698dec173afc66000b4660e949}{\index{Ball@{Ball}!move@{move}}
+\index{move@{move}!Ball@{Ball}}
+\subsubsection[{move}]{\setlength{\rightskip}{0pt plus 5cm}void Ball\-::move (
+\begin{DoxyParamCaption}
+\item[{int}]{time}
+\end{DoxyParamCaption}
+)}}\label{classBall_ae58dee698dec173afc66000b4660e949}
+Updates the ball's travel position based on the time since last update 
+\begin{DoxyParams}{Parameters}
+{\em int} & time for the elapsed time \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Matthew Bullis 
+\end{DoxyAuthor}
+\hypertarget{classBall_aa9efc8640cf5de6377caa0d64cc8fb13}{\index{Ball@{Ball}!recalc\-Landing\-Zone@{recalc\-Landing\-Zone}}
+\index{recalc\-Landing\-Zone@{recalc\-Landing\-Zone}!Ball@{Ball}}
+\subsubsection[{recalc\-Landing\-Zone}]{\setlength{\rightskip}{0pt plus 5cm}void Ball\-::recalc\-Landing\-Zone (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classBall_aa9efc8640cf5de6377caa0d64cc8fb13}
+Calculates where the ball will land using the balls current position and velocity \begin{DoxyAuthor}{Author}
+Matthew Bullis 
+\end{DoxyAuthor}
+\hypertarget{classBall_ac8bde2e98049adf194667e6a6505112d}{\index{Ball@{Ball}!wallbounce@{wallbounce}}
+\index{wallbounce@{wallbounce}!Ball@{Ball}}
+\subsubsection[{wallbounce}]{\setlength{\rightskip}{0pt plus 5cm}void Ball\-::wallbounce (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classBall_ac8bde2e98049adf194667e6a6505112d}
+Updates the ball's velocity if there is a collision with the wall \begin{DoxyAuthor}{Author}
+Matthew Bullis 
+\end{DoxyAuthor}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Ball.\-h\item 
+Ball.\-cpp\end{DoxyCompactItemize}
